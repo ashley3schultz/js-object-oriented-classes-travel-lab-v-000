@@ -18,8 +18,8 @@ class Route {
   blocksTravelled(){
     const vs = this.beginningLocation.vertical
     const ve = this.endingLocation.vertical
-    const hs = this.beginningLocation.horizontal === 'Park' ? 4 : 1
-    return this.endingLocation.horizontal === 'Park' ? 4 : 1
+    return this.beginningLocation.horizontal === 'Park' ? 4 : 1
+    const he = this.endingLocation.horizontal === 'Park' ? 4 : 1
 
   }
 
