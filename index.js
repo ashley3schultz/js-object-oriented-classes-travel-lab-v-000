@@ -20,9 +20,7 @@ class Route {
     const ve = this.endingLocation.vertical
     const hs = this.beginningLocation.horizontal === 'Park' ? 5 : 1
     const he = this.endingLocation.horizontal === 'Park' ? 5 : 1
-    const v = ve > vs ? ve - vs : vs - ve
-    const h = he > hs ? he - hs : hs - he
-    return v + h
+    return (ve > vs ? ve - vs : vs - ve) - he > hs ? he - hs : hs - he
   }
 
   estimatedTime(){
