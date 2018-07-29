@@ -22,7 +22,7 @@ class Route {
     const he = this.endingLocation.horizontal === 'Park' ? 5 : 1
     const v = ve > vs ? ve - vs : vs - ve
     const h = he > hs ? he - hs : hs - he
-    return v > h ? v - h : h - v
+    return v + h
   }
 
   estimatedTime(){
