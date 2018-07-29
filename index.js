@@ -23,8 +23,8 @@ class Route {
     return (ve > vs ? ve - vs : vs - ve) + (he > hs ? he - hs : hs - he)
   }
 
-  estimatedTime(){
-    return this.blocksTravelled() / 3
+  estimatedTime(peak = false){
+    peak = true ? return this.blocksTravelled() / 2 : return this.blocksTravelled() / 3
   }
 
 }
