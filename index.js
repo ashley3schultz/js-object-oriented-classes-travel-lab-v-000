@@ -18,7 +18,7 @@ class Route {
   blocksTravelled(){
     const s = this.beginningLocation.vertical
     const e = this.endingLocation.vertical
-    return e - s
+    return e > s ? e - s : s - e
   }
 
   estimatedTime(){
