@@ -16,9 +16,9 @@ class Route {
   }
 
   blocksTravelled(){
-    const s = this.beginningLocation.vertical
-    const e = this.endingLocation.vertical
-    return e > s ? e - s : s - e
+    const vs = this.beginningLocation.vertical
+    const ve = this.endingLocation.vertical
+    return ve > vs ? ve - vs : vs - ve
   }
 
   estimatedTime(){
