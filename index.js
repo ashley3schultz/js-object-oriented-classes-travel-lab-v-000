@@ -16,8 +16,8 @@ class Route {
   }
 
   blocksTravelled(){
-    s = this.beginningLocation.vertical
-    e = this.endingLocation.vertical
+    const s = this.beginningLocation.vertical
+    const e = this.endingLocation.vertical
     return e - s
   }
 
